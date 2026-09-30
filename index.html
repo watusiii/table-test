@@ -1,0 +1,30 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Game</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #111; color: #eee; font: 14px monospace; }
+  canvas { display: block; margin: 0 auto; background: #1b1b1b; }
+</style>
+<canvas id="c" width="480" height="320"></canvas>
+<script>
+  const canvas = document.getElementById('c');
+  const g = canvas.getContext('2d');
+  const me = { x: 240, y: 160, speed: 3 };
+  const keys = {};
+  addEventListener('keydown', (e) => { keys[e.key.toLowerCase()] = true; });
+  addEventListener('keyup', (e) => { keys[e.key.toLowerCase()] = false; });
+  function tick() {
+    if (keys.arrowleft || keys.a) me.x -= me.speed;
+    if (keys.arrowright || keys.d) me.x += me.speed;
+    if (keys.arrowup || keys.w) me.y -= me.speed;
+    if (keys.arrowdown || keys.s) me.y += me.speed;
+    g.fillStyle = '#1b1b1b';
+    g.fillRect(0, 0, 480, 320);
+    g.fillStyle = '#7cf';
+    g.fillRect(me.x - 8, me.y - 8, 16, 16);
+    g.fillStyle = '#eee';
+    g.fillText('Click here, then arrow keys or WASD. Edit index.html and this reloads.', 10, 20);
+    requestAnimationFrame(tick);
+  }
+  tick();
+</script>
