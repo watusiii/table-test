@@ -1,21 +1,7 @@
-hello i am watusi 
+this is the beginning of time
 
 
-we gonna 
-
-make da moneys
- hekhehehehfdd
-f
-dsfsldktext bastdklftsdlkej helghfgdhfglsdkofs my names lkdifs watuslsu jffjjf
+pp poop
 
 
-hello hello 
-dsad
-adskasdkjcan i bettle asdada sadadakjsdhaadadadad
-
-
-yoyoyosdfsdfdsfsd
-
-kdalkasd;;asla;sdldadadadadadadadad
-
-adfghfghfghf
+not poop
